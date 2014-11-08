@@ -1,0 +1,23 @@
+#!/bin/bash
+cat description
+echo "Options include:"
+for f in *
+do
+	if [[ -x "$f" ]] 
+	then
+		echo "'$f'"
+	fi
+done
+echo
+echo "Others present:"
+for f in *
+do
+	if  [ "$f" != "$USER" ]  
+	then
+		g="../Players/$f"
+		if [ -e "$g" ]
+		then 
+			echo "$f"
+		fi
+	fi
+done

@@ -1,0 +1,4 @@
+#!/bin/bash
+# echo $USER 
+mv $USER ../Office
+cd ../Office

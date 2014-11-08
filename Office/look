@@ -1,0 +1,11 @@
+#!/bin/bash
+echo "You are in a bright anonymous cube with no whiteboards.  Someone has written on the windows"
+echo
+echo "Options include:"
+ls north
+ls Home
+ls Bistro
+echo
+echo "Others present:"
+# I don't know how to filter these yet.
+ls
